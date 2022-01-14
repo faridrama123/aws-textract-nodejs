@@ -1,7 +1,7 @@
 const routes = (handler) => [
   {
     method: 'POST',
-    path: '/compareFace',
+    path: '/imageToText',
     handler: handler.postNoteHandler,
         options: {
       payload: {

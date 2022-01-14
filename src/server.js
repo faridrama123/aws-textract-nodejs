@@ -5,11 +5,11 @@ const Hapi = require('@hapi/hapi');
 
 // notes
 const notes = require('./api/notes');
-const RekognitionService = require('./services/aws/RekognitionService');
+// const RekognitionService = require('./services/aws/RekognitionService');
 
 const init = async () => {
 
-  const rekognitioService = new RekognitionService();
+  // const rekognitioService = new RekognitionService();
 
   const server = Hapi.server({
     port: process.env.PORT,
@@ -26,7 +26,7 @@ const init = async () => {
     {
       plugin: notes,
       options: {
-        service: rekognitioService,
+        // service: rekognitioService,
       },
     },
     
